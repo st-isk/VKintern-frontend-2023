@@ -1,0 +1,99 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма бронирования переговорной</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="top-bar">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 15.36C0 8.11923 0 4.49884 2.24942 2.24942C4.49884 0 8.11923 0 15.36 0H16.64C23.8808 0 27.5012 0 29.7506 2.24942C32 4.49884 32 8.11923 32 15.36V16.64C32 23.8808 32 27.5012 29.7506 29.7506C27.5012 32 23.8808 32 16.64 32H15.36C8.11923 32 4.49884 32 2.24942 29.7506C0 27.5012 0 23.8808 0 16.64V15.36Z" fill="#0077FF"/>
+                <path d="M17.0268 23.0534C9.73344 23.0534 5.57348 18.0534 5.40015 9.7334H9.05347C9.17347 15.8401 11.8667 18.4267 14.0001 18.96V9.7334H17.4402V15C19.5469 14.7734 21.7599 12.3734 22.5066 9.7334H25.9467C25.3734 12.9867 22.9733 15.3867 21.2667 16.3734C22.9733 17.1734 25.7068 19.2667 26.7468 23.0534H22.96C22.1467 20.5201 20.1202 18.56 17.4402 18.2934V23.0534H17.0268Z" fill="white"/>
+            </svg>
+        </div>
+        <form id="form" action="/">
+            <h1>Регистрация бронирования</h1>
+            <div class="input-control">
+                <label for="tower">Выбор башни</label>
+                <select id="tower" name="tower">
+                    <option>А</option>
+                    <option>Б</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label for="floor">Выбор этажа</label>
+                <select id="floor" name="floor">
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label for="room">Выбор переговорки</label>
+                <select id="room" name="room">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label for="datePickStart">Выбор даты и времени начала</label>
+                <input type="datetime-local" id="datePickStart" name="datePickStart"
+                value="2023-05-10T00:30"
+                min="2023-05-10T00:00" max="2023-06-10T00:00">
+            </div>
+            <div class="input-control">
+                <label for="datePickEnd">Выбор даты и времени конца</label>
+                <input type="datetime-local" id="datePickEnd" name="datePickEnd"
+                value="2023-05-10T00:30"
+                min="2023-05-10T00:00" max="2023-06-10T00:00">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
